@@ -737,7 +737,7 @@ body {
 @media (max-width: 768px) {
   .about-parallax {
     background-attachment: scroll;
-    height: 220px;
+    height: 58px;
   }
 
   .about-title h2 {
@@ -857,6 +857,11 @@ body {
   font-weight: 700;
   margin-bottom: 55px;
 }
+.nad h3{
+    font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
 
 .committee-text p {
   font-size: 18px;
@@ -867,17 +872,25 @@ body {
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .committee-card {
-    flex-direction: column;
+    
     text-align: center;
+    display: grid;  
+    grid-template-rows: repeat(2, 1fr);
   }
 
   .committee-image img {
-    width: 220px;
+    width: 150px;
   }
 
   .committee-header h1 {
-    font-size: 38px;
+    font-size: 28px;
   }
+
+  .committee-text h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
 }
 
 /* CHIEF PATRON STRIP */
