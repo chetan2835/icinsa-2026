@@ -20,15 +20,6 @@ body {
   background: var(--theme);
 }
 
-/* =====================
-   HERO SECTION
-===================== */
-.hero {
-  background-image: url("/assets/img/download (1).jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 
 /* =====================
    COUNTDOWN
@@ -619,13 +610,6 @@ body {
 }
 
 /* Dark overlay for readability */
-.hero-parallax::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(255, 255, 255, 0.65);
-}
-
 /* .hero-parallax::before {
   content: "";
   position: absolute;
@@ -636,9 +620,6 @@ body {
 .hero-content {
   position: relative;
   z-index: 1;
- 
-  color: #000;
-
   color: #ffffff;
 }
 
@@ -666,6 +647,7 @@ body {
     background-attachment: scroll;
   }
 }
+
 
 /* ====================
       ABOUT 
@@ -839,6 +821,8 @@ body {
   background: #f7f6f4;
   padding: 50px 20px 80px;
   text-align: center;
+  display: grid;
+  grid-row: 2 1pr;
 }
 
 /* ROLE TITLE */
