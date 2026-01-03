@@ -626,10 +626,20 @@ body {
   background: rgba(255, 255, 255, 0.65);
 }
 
+/* .hero-parallax::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(157, 158, 237, 0.65);
+} */
+
 .hero-content {
   position: relative;
   z-index: 1;
+ 
   color: #000;
+
+  color: #ffffff;
 }
 
 .hero-content h1 {
@@ -654,5 +664,261 @@ body {
 @media (max-width: 768px) {
   .hero-parallax {
     background-attachment: scroll;
+  }
+}
+
+/* ====================
+      ABOUT 
+   ====================   */
+   /* PARALLAX HEADER */
+.about-parallax {
+  height: 120px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.anandice-bg {
+  background-image: url("/assets/img/download\ \(1\)\ copy.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: relative;
+  background-attachment: fixed;   /* ⭐ key line */
+  background-position-y: top;
+}
+
+.about-overlay {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* TITLE STYLE */
+.about-title {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.about-title h1 {
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.about-title .line {
+  width: 120px;
+  height: 2px;
+  background: #ffffff;
+}
+
+/* CONTENT SECTION */
+.about-content {
+  background: #ffffff;
+  padding: 60px 20px;
+}
+
+.about-wrapper {
+  max-width: 1100px;
+  margin: auto;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #222;
+}
+
+.about-wrapper p {
+  margin-bottom: 18px;
+}
+
+/* HIGHLIGHTS */
+.about-wrapper h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.highlight-list {
+  padding-left: 20px;
+}
+
+.highlight-list li {
+  margin-bottom: 14px;
+}
+
+/* MOBILE OPTIMIZATION */
+@media (max-width: 768px) {
+  .about-parallax {
+    background-attachment: scroll;
+    height: 220px;
+  }
+
+  .about-title h2 {
+    font-size: 24px;
+  }
+
+  .about-title .line {
+    width: 60px;
+  }
+}
+.section-title-line {
+  position: relative;
+  text-align: center;
+  margin: 40px 0;
+  
+}
+
+.section-title-line h1 {
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0;
+  display: inline-block;
+  padding: 10px 30px;
+  position: relative;
+  z-index: 1;
+}
+
+/* TOP & BOTTOM LINES */
+.section-title-line::before,
+.section-title-line::after {
+  content: "";
+  position: absolute;
+  left: 5%;
+  width: 90%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.section-title-line::before {
+  top: 0;
+}
+
+.section-title-line::after {
+  bottom: 0;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .section-title-line h1 {
+    font-size: 22px;
+    padding: 8px 15px;
+  }
+
+  .section-title-line::before,
+  .section-title-line::after {
+    left: 10%;
+    width: 80%;
+  }
+}
+
+.h3{
+  background: #0E3A6D;
+  background-image: repeating-linear-gradient(45deg,
+      rgba(255, 255, 255, 0.06) 0px,
+      rgba(255, 255, 255, 0.06) 2px,
+      transparent 2px,
+      transparent 8px);
+  text-align: center;
+  padding: 25px 0;
+} 
+
+
+
+
+
+
+/* CONTENT AREA */
+.committee-content {
+  background: #f7f6f4;
+  padding: 50px 20px 80px;
+  text-align: center;
+}
+
+/* ROLE TITLE */
+.committee-role {
+  color: var(--theme);
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+/* CARD LAYOUT */
+.committee-card {
+  max-width: 900px;
+  margin: auto ;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+/* IMAGE */
+.committee-image img {
+  width: 260px;
+  height: auto;
+  border: 2px solid #333;
+}
+
+/* TEXT */
+.committee-text h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 55px;
+}
+
+.committee-text p {
+  font-size: 18px;
+  margin: 2px 0;
+  color: #111;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .committee-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .committee-image img {
+    width: 220px;
+  }
+
+  .committee-header h1 {
+    font-size: 38px;
+  }
+}
+
+/* CHIEF PATRON STRIP */
+.role-strip {
+  width: 100%;
+  background: #e2e1df;   /* light off-white / grey */
+  padding: 15px 0px;
+  text-align: center;
+}
+
+.role-strip h2 {
+  margin: 0;
+  color: var(--theme);        /* deep red like image */
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .role-strip {
+    padding: 30px 15px;
+  }
+
+  .role-strip h2 {
+    font-size: 24px;
   }
 }
