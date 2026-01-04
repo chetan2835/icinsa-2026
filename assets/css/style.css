@@ -10,7 +10,7 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  
+
 }
 
 /* =====================
@@ -516,6 +516,7 @@ body {
     height: 250px;
   }
 }
+
 /* NAVBAR BASE */
 
 .navbar {
@@ -601,7 +602,8 @@ body {
   background-image: url("/assets/img/download (1).jpeg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;   /* ⭐ key line */
+  background-attachment: fixed;
+  /* ⭐ key line */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -652,7 +654,7 @@ body {
 /* ====================
       ABOUT 
    ====================   */
-   /* PARALLAX HEADER */
+/* PARALLAX HEADER */
 .about-parallax {
   height: 120px;
   background-size: cover;
@@ -666,7 +668,8 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: relative;
-  background-attachment: fixed;   /* ⭐ key line */
+  background-attachment: fixed;
+  /* ⭐ key line */
   background-position-y: top;
 }
 
@@ -748,11 +751,12 @@ body {
     width: 60px;
   }
 }
+
 .section-title-line {
   position: relative;
   text-align: center;
   margin: 40px 0;
-  
+
 }
 
 .section-title-line h1 {
@@ -800,7 +804,7 @@ body {
   }
 }
 
-.h3{
+.h3 {
   background: #0E3A6D;
   background-image: repeating-linear-gradient(45deg,
       rgba(255, 255, 255, 0.06) 0px,
@@ -809,7 +813,7 @@ body {
       transparent 8px);
   text-align: center;
   padding: 25px 0;
-} 
+}
 
 
 
@@ -836,7 +840,7 @@ body {
 /* CARD LAYOUT */
 .committee-card {
   max-width: 900px;
-  margin: auto ;
+  margin: auto;
   display: flex;
   align-items: center;
   gap: 50px;
@@ -846,7 +850,7 @@ body {
 
 /* IMAGE */
 .committee-image img {
-  width: 260px;
+  width: 200px;
   height: auto;
   border: 2px solid #333;
 }
@@ -855,10 +859,11 @@ body {
 .committee-text h3 {
   font-size: 20px;
   font-weight: 700;
-  margin-bottom: 55px;
+  margin-bottom: 0;
 }
-.nad h3{
-    font-size: 20px;
+
+.nad h3 {
+  font-size: 20px;
   font-weight: 700;
   margin-bottom: 0px;
 }
@@ -872,10 +877,9 @@ body {
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .committee-card {
-    
+    margin-bottom: 35px;
     text-align: center;
-    display: grid;  
-    grid-template-rows: repeat(2, 1fr);
+    display: grid;
   }
 
   .committee-image img {
@@ -887,23 +891,29 @@ body {
   }
 
   .committee-text h3 {
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 0;
-}
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+
+  .committee-text {
+    margin-top: -35px;
+  }
 }
 
 /* CHIEF PATRON STRIP */
 .role-strip {
   width: 100%;
-  background: #e2e1df;   /* light off-white / grey */
+  background: #e2e1df;
+  /* light off-white / grey */
   padding: 15px 0px;
   text-align: center;
 }
 
 .role-strip h2 {
   margin: 0;
-  color: var(--theme);        /* deep red like image */
+  color: var(--theme);
+  /* deep red like image */
   font-size: 40px;
   font-weight: 700;
   letter-spacing: 0.5px;
