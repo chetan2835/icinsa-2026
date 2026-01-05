@@ -623,6 +623,7 @@ body {
   position: relative;
   z-index: 1;
   color: #ffffff;
+  
 }
 
 .hero-content h1 {
@@ -631,7 +632,7 @@ body {
 }
 
 .hero-content h2 {
-  font-size: 30px;
+  font-size: 100px;
   font-weight: 600;
 }
 
@@ -640,7 +641,12 @@ body {
 }
 
 .hero-content span {
-  font-size: 18px;
+font-size: 40px;
+}
+
+.hero-content p {
+  font-size: 30px;
+   font-weight: 500;  
 }
 
 /* Mobile fix (parallax disabled on mobile for performance) */
@@ -648,6 +654,25 @@ body {
   .hero-parallax {
     background-attachment: scroll;
   }
+
+  .hero-content p {
+  font-size: 20px;
+  font-weight: 500;
+  
+}
+.hero-content h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.hero-content h2 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.hero-content span {
+  font-size: 20px;
+}
 }
 
 
