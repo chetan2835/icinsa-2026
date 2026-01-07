@@ -623,7 +623,7 @@ body {
   position: relative;
   z-index: 1;
   color: #ffffff;
-  
+
 }
 
 .hero-content h1 {
@@ -632,7 +632,7 @@ body {
 }
 
 .hero-content h2 {
-  font-size: 100px;
+  font-size: 80px;
   font-weight: 600;
 }
 
@@ -641,12 +641,12 @@ body {
 }
 
 .hero-content span {
-font-size: 40px;
+  font-size: 40px;
 }
 
 .hero-content p {
   font-size: 30px;
-   font-weight: 500;  
+  font-weight: 500;
 }
 
 /* Mobile fix (parallax disabled on mobile for performance) */
@@ -656,23 +656,24 @@ font-size: 40px;
   }
 
   .hero-content p {
-  font-size: 20px;
-  font-weight: 500;
-  
-}
-.hero-content h1 {
-  font-size: 30px;
-  font-weight: 700;
-}
+    font-size: 20px;
+    font-weight: 500;
 
-.hero-content h2 {
-  font-size: 50px;
-  font-weight: 600;
-}
+  }
 
-.hero-content span {
-  font-size: 20px;
-}
+  .hero-content h1 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .hero-content h2 {
+    font-size: 50px;
+    font-weight: 600;
+  }
+
+  .hero-content span {
+    font-size: 20px;
+  }
 }
 
 
@@ -979,8 +980,8 @@ font-size: 40px;
 .accordion-body {
   display: none;
   padding: 20px 30px;
-  background: var(--theme);
-  color: white;
+  background: white;
+  color: black;
 }
 
 .accordion-body ul {
@@ -1062,6 +1063,7 @@ font-size: 40px;
   margin-top: 25px;
   font-size: 17px;
 }
+
 /* ===============================
    PAGE HERO / HEADER
 ================================ */
@@ -1080,7 +1082,7 @@ font-size: 40px;
 
 /* CONTACT PAGE IMAGE */
 .contact-hero {
-  background-image: url("/assets/img/contact.jpeg"); 
+  background-image: url("/assets/img/contact.jpeg");
 }
 
 /* DARK OVERLAY */
@@ -1111,10 +1113,12 @@ font-size: 40px;
   .hero-overlay h1 {
     font-size: 36px;
   }
-  .contact-hero{
+
+  .contact-hero {
     background-size: 100%;
   }
 }
+
 .awards-section {
   max-width: 900px;
   margin: auto;
@@ -1151,7 +1155,8 @@ font-size: 40px;
   font-weight: 700;
   margin-top: 40px;
 }
-.award-hero{
+
+.award-hero {
   background: url("/assets/img/award.png");
   background-size: cover;
   background-position: center;
@@ -1174,11 +1179,13 @@ font-size: 40px;
   justify-content: center;
   margin-bottom: 30px;
 }
+
 .section-header span {
   flex: 1;
   height: 2px;
   background: #fff;
 }
+
 .section-header h2 {
   background: var(--theme);
   color: #fff;
@@ -1193,6 +1200,7 @@ font-size: 40px;
   border-collapse: collapse;
   margin: 25px 0;
 }
+
 .fee-table th,
 .fee-table td {
   border: 1px solid #fff;
@@ -1201,6 +1209,7 @@ font-size: 40px;
   background: var(--theme);
   color: #fff;
 }
+
 .bank-table th {
   width: 40%;
   text-align: left;
@@ -1219,6 +1228,7 @@ font-size: 40px;
   font-size: 14px;
   line-height: 1.6;
 }
+
 .text-small ul {
   margin-left: 18px;
 }
@@ -1249,6 +1259,7 @@ font-size: 40px;
   margin-top: 25px;
   text-align: center;
 }
+
 .register-link {
   display: inline-block;
   font-size: 20px;
@@ -1257,6 +1268,7 @@ font-size: 40px;
   text-decoration: underline;
   margin-bottom: 10px;
 }
+
 .payment-link {
   display: block;
   background: var(--theme);
@@ -1265,10 +1277,11 @@ font-size: 40px;
   font-size: 14px;
   margin-top: 8px;
 }
-.reg-hero{
+
+.reg-hero {
   background: url("/assets/img/reg.jpeg");
   background-size: cover;
-  background-position:center;
+  background-position: center;
   background-repeat: no-repeat;
   position: relative;
 }
@@ -1361,12 +1374,14 @@ font-size: 40px;
 }
 
 @media (max-width: 768px) {
+
   .pub-row,
   .pub-row.reverse {
     flex-direction: column;
     text-align: center;
   }
 }
+
 .review-policy-section {
   max-width: 1100px;
   margin: auto;
@@ -1744,4 +1759,13 @@ font-size: 40px;
     grid-template-columns: 1fr;
     text-align: center;
   }
+  .logo img {
+  width: 40px;
+  margin-right: 5px;
+}
+}
+
+.logo img {
+  width: 40px;
+  margin-right: 5px;
 }
