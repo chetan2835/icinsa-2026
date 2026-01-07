@@ -17,80 +17,9 @@
 
 <body>
 
-  <!-- NAVBAR -->
-     <nav class="navbar navbar-expand-lg navbar-dark bg-maroon fixed-top position-relative">
-        <div class="container-fluid position-static">
+  <div id="header"></div>
 
-            <!-- BRAND -->
-            <a class="navbar-brand fw-bold" href="#">
-                ICINSA-2026
-            </a>
 
-            <!-- TOGGLER -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- MENU -->
-            <div class="collapse navbar-collapse position-static" id="mainNav">
-                <ul class="navbar-nav ms-auto align-items-lg-center">
-
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Committee</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="comm.html">Organizing Committee</a></li>
-                            <li><a class="dropdown-item" href="national adv.html">National Advisory</a></li>
-                            <li><a class="dropdown-item" href="internationaladv.html">International Advisory</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item"><a class="nav-link" href="speaker.html">Speakers</a></li>
-                    <li class="nav-item"><a class="nav-link" href="scope.html">Scope</a></li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="specialsession.html" data-bs-toggle="dropdown">
-                            Special Sessions
-                        </a>
-                        <ul class="dropdown-menu">
-                             <li><a class="dropdown-item" href="tba.html">To be Announced</a></li>
-              <!-- <li><a class="dropdown-item" href="ss01.html">SS02: Session Name</a></li>
-              <li><a class="dropdown-item" href="ss01.html">SS03: Session Name</a></li>
-              <li><a class="dropdown-item" href="ss01.html">SS04: Session Name</a></li>
-              <li><a class="dropdown-item" href="ss01.html">SS05: Session Name</a></li>
-              <li><a class="dropdown-item" href="ss01.html">SS06: Session Name</a></li>
-              <li><a class="dropdown-item" href="ss01.html">SS07: Session Name</a></li>
-              <li><a class="dropdown-item" href="ss01.html">SS08: Session Name</a></li>
-              <li><a class="dropdown-item" href="ss01.html">SS09: Session Name</a></li> -->
-
-                        </ul>
-                    </li>
-
-                    <li class="nav-item"><a class="nav-link" href="callforsession.html">Call for Special Session</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="abstraction.html">Abstract/Paper Submission</a></li>
-                    <li class="nav-item"><a class="nav-link" href="publication.html">Publication</a></li>
-                    <li class="nav-item"><a class="nav-link" href="registration.html">Registration</a></li>
-
-                    <!-- MORE (RIGHT EDGE FIXED) -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                            More
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="sponsors.html">Sponsors</a></li>
-                            <li><a class="dropdown-item" href="award.html">Awards</a></li>
-                            <!-- <li><a class="dropdown-item" href="attraction.html">Attractions</a></li> -->
-                            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
-                        </ul>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-    </nav>
 
   <section class="page-hero contact-hero">
     <div class="hero-overlay">
@@ -145,55 +74,16 @@
     </div>
   </section>
 
+<div id="footer"></div>
+<script>
+  fetch("header.html")
+  .then(res => res.text())
+  .then(data => document.getElementById("header").innerHTML = data);
 
-
-
-
-  <!-- CONTACT US SECTION -->
-  <section class="contact-section">
-    <div class="contact-container">
-
-      <!-- LEFT CONTENT -->
-      <div class="contact-left">
-        <h2 style="text-align: center;">CONTACT US</h2>
-
-        <p style="text-align: center;">
-          Anand International College of Engineering
-          <br>Near Kanota, Agra Road, Jaipur
-          <br><br>Prof. Dr. Praveen Agarwal
-          <br>Conference Chair & Convenor, ICINSA-2026
-          <br><a href="https://wa.me/918387894656?text=Inquiry%20regarding%20ICINSA-2026.%20Kindly%20guide%20me."
-            target="_blank" style="color:#fff; text-decoration: none ;  margin-right:10px;">
-            <i class="fab fa-whatsapp" style="color:#25D366"></i> +(91) 8387894656
-          </a>
-
-          <br><a
-            href="mailto:praveen.agarwal@anandice.ac.in?subject=ICINSA-2026&body=Inquiry%20regarding%20ICINSA-2026.%20Kindly%20guide%20me."
-            style="color:#fff; text-decoration: none;">
-            <i class="fas fa-envelope"> </i> praveen.agarwal@anandice.ac.in
-          </a>
-          <br><br><a
-            href="mailto:icinsa@anandice.ac.in?subject=ICINSA-2026&body=Inquiry%20regarding%20ICINSA-2026.%20Kindly%20guide%20me."
-            style="color:#fff; text-decoration: none;"> Conference Mail : <br>
-            <i class="fas fa-envelope"> </i> icinsa@anandice.ac.in
-          </a>
-        </p>
-      </div>
-      <!-- RIGHT MAP -->
-      <div class="contact-right">
-        <div class="map-container">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.3655848133482!2d75.96836491505453!3d26.86235549944857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db8be74c25e59%3A0x675325c0c46956fc!2sAnand%20International%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1704382951843!5m2!1sen!2sin"
-            width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
+fetch("footer.html")
+  .then(res => res.text())
+  .then(data => document.getElementById("footer").innerHTML = data);
+</script>
 
   <script src="script.js"></script>
 </body>
