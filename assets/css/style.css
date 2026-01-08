@@ -1130,7 +1130,7 @@ body {
 
 .awards-section h3 {
   color: #b30000;
-  font-size: 18px;
+  font-size: 20px;
   margin-top: 30px;
   font-weight: 700;
 }
@@ -1225,7 +1225,7 @@ body {
 
 /* TEXT */
 .text-small {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.6;
 }
 
@@ -1274,7 +1274,7 @@ body {
   background: var(--theme);
   color: #fff;
   padding: 8px;
-  font-size: 14px;
+  font-size: 25px;
   margin-top: 8px;
 }
 
@@ -1305,7 +1305,7 @@ body {
 }
 
 .pub-intro {
-  font-size: 15px;
+  font-size: 20px;
   line-height: 1.6;
   margin: 30px 0;
 }
@@ -1332,7 +1332,7 @@ body {
 }
 
 .pub-text {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.6;
 }
 
@@ -1343,12 +1343,12 @@ body {
 
 .deadline {
   color: red;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .pub-note {
   text-align: center;
-  font-size: 14px;
+  font-size: 18px;
   color: #5a6cae;
   margin-top: 30px;
 }
@@ -1358,7 +1358,7 @@ body {
   background: var(--theme);
   color: #ffffff;
   padding: 50px 20px;
-  font-size: 14px;
+  font-size: 20px;
   max-width: 1000px;
   margin: auto;
 
@@ -1397,7 +1397,7 @@ body {
 }
 
 .policy-intro {
-  font-size: 14px;
+  font-size: 20px;
   line-height: 1.6;
   margin-bottom: 30px;
 }
@@ -1409,25 +1409,25 @@ body {
 }
 
 .policy-col h4 {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 700;
   margin-top: 15px;
 }
 
 .policy-col ul {
   padding-left: 18px;
-  font-size: 13.5px;
+  font-size: 15px;
   line-height: 1.6;
 }
 
 .policy-col p {
-  font-size: 13.5px;
+  font-size: 18px;
   line-height: 1.6;
 }
 
 .policy-note {
   font-style: italic;
-  font-size: 13px;
+  font-size: 18px;
   margin-top: 10px;
 }
 
@@ -1438,7 +1438,7 @@ body {
 }
 
 .publication-flow h3 {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 700;
   text-decoration: underline;
   margin-bottom: 20px;
@@ -1446,7 +1446,7 @@ body {
 
 .publication-flow p,
 .publication-flow ul {
-  font-size: 13.5px;
+  font-size: 18px;
   line-height: 1.6;
 }
 
@@ -1471,14 +1471,14 @@ body {
 
 .section-heading {
   text-align: center;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 700;
   color: var(--theme);
   margin-bottom: 15px;
 }
 
 .section-text {
-  font-size: 14.5px;
+  font-size: 20px;
   line-height: 1.7;
   text-align: center;
   margin-bottom: 25px;
@@ -1486,7 +1486,7 @@ body {
 
 .deadline-text {
   text-align: center;
-  font-size: 18px;
+  font-size: 22px;
   margin: 20px 0;
 }
 
@@ -1508,7 +1508,7 @@ body {
 .action-links a {
   display: inline-block;
   color: var(--theme);
-  font-size: 16px;
+  font-size: 25px;
   font-weight: 700;
   text-decoration: none;
   margin: 6px 0;
@@ -1519,28 +1519,28 @@ body {
 }
 
 .sub-heading {
-  font-size: 14.5px;
+  font-size: 20px;
   font-weight: 700;
   color: var(--theme);
   margin-bottom: 10px;
 }
 
 .guidelines-list {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.7;
   padding-left: 20px;
   margin-bottom: 25px;
 }
 
 .note-text {
-  font-size: 13.5px;
+  font-size: 18px;
   line-height: 1.6;
   color: var(--theme);
   margin-bottom: 30px;
 }
 
 .final-note {
-  font-size: 13.5px;
+  font-size: 18px;
   line-height: 1.6;
   margin-top: 25px;
 }
