@@ -567,10 +567,7 @@ body {
     margin-top: 6px;
     z-index: 2000;
   }
-   .committee-image img {
-    width: 50%;
-    margin-bottom: 20px;
-  }
+   
 }
 
 /* DROPDOWN STYLE */
@@ -939,6 +936,10 @@ body {
 
   .role-strip h2 {
     font-size: 24px;
+  }
+   .committee-image img {
+    width: 50%;
+    margin-bottom: 20px;
   }
 }
 
