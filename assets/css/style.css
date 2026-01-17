@@ -219,6 +219,7 @@ body {
     grid-template-columns: 1fr;
     padding-left: 0;
   }
+   
 }
 
 @media (max-width: 576px) {
@@ -565,6 +566,10 @@ body {
     top: 100%;
     margin-top: 6px;
     z-index: 2000;
+  }
+   .committee-image img {
+    width: 50%;
+    margin-bottom: 20px;
   }
 }
 
