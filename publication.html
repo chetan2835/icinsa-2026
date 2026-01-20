@@ -17,7 +17,7 @@
 
 <body>
 
- <div id="header"></div>
+  <div id="header"></div>
 
 
   <section class="page-hero reg-hero">
@@ -42,28 +42,33 @@
     <!-- JOURNAL 1 -->
     <div class="pub-row">
       <div class="pub-logo">
-        <img src="assets/img/bspm.png" alt="BSPM">
+        <!-- <img src="assets/img/bspm.png" alt="BSPM"> -->
       </div>
       <div class="pub-text">
         <p>
-          Authors are invited to submit their papers to
-          <strong>Boletim da Sociedade Paranaense de Matemática</strong>.
+          <a href="https://altayconfproceedings.com/index.php/pub" target="_blank">ALTAY Conference Proceedings in
+            Mathematics (ALTAY Conf. Proc. Math.)</a>
         </p>
         <p>
-          Submission of manuscripts are welcome in this special collection on
-          <strong>“ICINSA-2026”</strong>.
+
+          Guest Editors: Prof. Praveen Agarwal and Prof. Shilpi Jain <br>
+          APC: Free
+          <!-- Submission of manuscripts are welcome in this special collection on
+          <strong>“ICINSA-2026”</strong>. -->
         </p>
-        <p>
+        <!-- <p>
           ► Submit to
           <a href="#">Boletim da Sociedade Paranaense de Matemática</a>
-        </p>
-        <p class="deadline">(Submission Deadline: April 25, 2026)</p>
+        </p> -->
+        <p class="deadline">(Submission Deadline: July 25, 2026)</p>
       </div>
     </div>
 
+
+
     <hr class="red-line">
 
-    <!-- JOURNAL 2 -->
+    <!-- JOURNAL 2
     <div class="pub-row reverse">
       <div class="pub-text">
         <p>
@@ -86,7 +91,7 @@
 
     <hr class="red-line">
 
-    <!-- JOURNAL 3 -->
+     JOURNAL 3 
     <div class="pub-row">
       <div class="pub-logo">
         <img src="assets/img/pjaa.png" alt="PJAA">
@@ -105,7 +110,7 @@
         </p>
         <p class="deadline">(Submission Deadline: April 25, 2026)</p>
       </div>
-    </div>
+    </div> -->
 
     <!-- NOTE -->
     <p class="pub-note">
@@ -290,16 +295,16 @@
     </div>
 
   </section>
-<div id="footer"></div>
-<script>
-  fetch("header.html")
-  .then(res => res.text())
-  .then(data => document.getElementById("header").innerHTML = data);
+  <div id="footer"></div>
+  <script>
+    fetch("header.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("header").innerHTML = data);
 
-fetch("footer.html")
-  .then(res => res.text())
-  .then(data => document.getElementById("footer").innerHTML = data);
-</script>
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer").innerHTML = data);
+  </script>
   <script src="script.js"></script>
 </body>
 
