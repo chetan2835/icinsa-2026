@@ -5,6 +5,11 @@
   <meta charset="UTF-8">
   <title>ICINSA-2026</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/assets/img/anandlogo.jpg" type="image/jpeg">
+  <meta name="description"
+    content="ICINSA-2026: International Conference on Innovation in Nonlinear Science and Its Applications. Join us in Jaipur, May 25-26, 2026.">
+  <meta name="keywords"
+    content="ICINSA 2026, Nonlinear Science, Mathematics Conference, Jaipur Conference, Anand International College of Engineering">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.css">
@@ -16,6 +21,11 @@
 </head>
 
 <body>
+
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="spinner"></div>
+  </div>
 
 
   <div id="header"></div>
@@ -362,14 +372,25 @@
 
 
   <div id="footer"></div>
-  <script>
-    fetch("header.html")
-      .then(res => res.text())
-      .then(data => document.getElementById("header").innerHTML = data);
 
-    fetch("footer.html")
-      .then(res => res.text())
-      .then(data => document.getElementById("footer").innerHTML = data);
+  <!-- BACK TO TOP BUTTON -->
+  <button id="backToTop" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+  <script>
+    Promise.all([
+      fetch("header.html").then(res => res.text()).then(data => document.getElementById("header").innerHTML = data),
+      fetch("footer.html").then(res => res.text()).then(data => document.getElementById("footer").innerHTML = data)
+    ]).then(() => {
+      // Hide preloader after content is loaded
+      setTimeout(() => {
+        const preloader = document.getElementById('preloader');
+        if (preloader) {
+          preloader.style.opacity = '0';
+          setTimeout(() => preloader.remove(), 500);
+        }
+      }, 300); // Short delay for smoothness
+    });
   </script>
 
   <script src="script.js"></script>

@@ -19,7 +19,70 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
 
+/* PRELOADER */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid var(--theme);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* BACK TO TOP BUTTON */
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: var(--theme);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#backToTop:hover {
+  background-color: #333;
+  transform: translateY(-3px);
 }
 
 /* =====================
@@ -228,7 +291,7 @@ body {
     grid-template-columns: 1fr;
     padding-left: 0;
   }
-   
+
 }
 
 @media (max-width: 576px) {
@@ -447,9 +510,8 @@ body {
   display: flex;
   align-items: center;
   /* FIX vertical alignment */
-  gap: 40px;
-  animation: scroll 40s linear infinite;
-
+  width: max-content;
+  animation: scroll 20s linear infinite;
 }
 
 
@@ -468,6 +530,7 @@ body {
   transition: all 0.5s ease;
   box-shadow: 0 25px 45px rgba(0, 0, 0, 0.35);
   filter: blur(1px);
+  margin-right: 40px;
   background: #000;
 }
 
@@ -576,7 +639,7 @@ body {
     margin-top: 6px;
     z-index: 2000;
   }
-   
+
 }
 
 /* DROPDOWN STYLE */
@@ -965,7 +1028,8 @@ body {
   .role-strip h2 {
     font-size: 24px;
   }
-   .committee-image img {
+
+  .committee-image img {
     width: 50%;
     margin-bottom: 20px;
   }
@@ -1314,7 +1378,7 @@ body {
 }
 
 .reg-hero {
-  background: url("/assets/img/reg.jpeg");
+  background: url("/assets/img/download\ \(1\)\ copy.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
