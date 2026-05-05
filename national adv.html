@@ -17,7 +17,7 @@
 
 <body>
 
-<div id="header"></div>
+    <div id="header"></div>
 
 
 
@@ -38,25 +38,72 @@
 
     <section class="committee-content " style="display: grid;  grid-template-columns: repeat(3, 1fr);">
         <div>
-            <div class="nad" style="text-align: center; margin-bottom: 25px;">
+            <div class="nad" style="text-align: center;">
                 <h3>Dr. R.P. Sharma</h3>
-                <p>Engineering College, Ajmer, INDIA</p>
-            </div>
-        </div>
-        <div>
-            <div class="nad" style="text-align: center; margin-bottom: 25px;">
-                <h3>Prof. O. P. Sikhwall</h3>
                 <p>
-                    Engg. College, Jaipur, INDIA</p>
+                    President <br>
+                     RGP, Engineering College Ajmer <br> INDIA
+                </p>
             </div>
         </div>
+        
+        <div>
+            <div class="nad" style="text-align: center;">
+                <h3>Prof. O. P. Sikhwal</h3>
+                <p>Vice President <br>
+                     RGP,
+                    PIET, Poornima
+                    Group, Jaipur <br> INDIA</p>
+            </div>
+        </div>
+
         <div>
             <div class="nad" style="text-align: center;">
                 <h3>Dr. M.L. Sukhwal</h3>
                 <p>
-                    TechnoIndia, NGR Udaipur INDIA</p>
+                    General Secretary <br>
+                     RGP, Techno India, NGR, Udaipur <br> INDIA</p>
             </div>
         </div>
+
+        <div>
+            <div class="nad" style="text-align: center;">
+                <h3>Dr. V. C. Jain</h3>
+                <p>
+                    Editor <br> Ganita  
+                    Sandesh, RGP, <br>
+                    Engineering College
+                    Ajmer <br> INDIA</p>
+            </div>
+        </div>
+
+        <div>
+            <div class="nad" style="text-align: center;">
+                <h3>Prof. Anil Gokhroo</h3>
+                <p>
+                   Treasurer <br>
+                    RGP, SPC Govt. College Ajmer <br> INDIA</p>
+            </div>
+        </div>
+
+        <div>
+            <div class="nad" style="text-align: center;">
+                <h3>Ex Prof. C.B. Gupta</h3>
+                <p>
+                   Ex Officio Member <br>
+                    RGP, BITS Pilani  <br>  INDIA</p>
+            </div>
+        </div>
+        <div>
+            <div class="nad" style="text-align: center;">
+                <h3>Dr Anita</h3>
+                <p>
+                    Joint Secretary <br>
+                     RGP, Modi University, 
+                    Lakshmangarh <br> INDIA</p>
+            </div>
+        </div>
+
     </section>
     <section class="committee-content "
         style="display: grid;  grid-template-columns: repeat(1, 1fr); margin-top: -95px;">
@@ -64,16 +111,16 @@
 
     </section>
 
-<div id="footer"></div>
-<script>
-  fetch("header.html")
-  .then(res => res.text())
-  .then(data => document.getElementById("header").innerHTML = data);
+    <div id="footer"></div>
+    <script>
+        fetch("header.html")
+            .then(res => res.text())
+            .then(data => document.getElementById("header").innerHTML = data);
 
-fetch("footer.html")
-  .then(res => res.text())
-  .then(data => document.getElementById("footer").innerHTML = data);
-</script>
+        fetch("footer.html")
+            .then(res => res.text())
+            .then(data => document.getElementById("footer").innerHTML = data);
+    </script>
 
     <script src="script.js"></script>
 </body>
